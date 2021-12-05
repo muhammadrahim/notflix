@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Card from './Card';
-import MyList from './pages/MyList';
 import NewAndPopular from './pages/NewAndPopular';
+import MyList from './pages/MyList';
+import Main from './pages/Main';
 import Header from './components/Header';
 
 const App = function () {
@@ -11,14 +11,12 @@ const App = function () {
     <div className="App">
       <Header />
       <Routes>
-        <Route exact path="/" element={<MyList />} />
-        <Route exact path="/" element={<NewAndPopular />} />
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/my-list" element={<MyList />} />
+        <Route exact path="/new" element={<NewAndPopular />} />
       </Routes>
-      <p>
-        Continue watching
-      </p>
-      <Card />
     </div>
+
   );
 };
 
