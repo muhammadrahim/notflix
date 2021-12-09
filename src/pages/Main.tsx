@@ -1,13 +1,10 @@
 import React from 'react';
-import Card from '../Card';
+import ListOfShows from '../components/ListOfShows';
 
 const Main = function () {
   return (
     <div className="Main">
-      <p>
-        Continue watching
-      </p>
-      <Card />
+      <ListOfShows />
     </div>
   );
 };

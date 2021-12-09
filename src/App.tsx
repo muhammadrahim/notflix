@@ -11,9 +11,9 @@ const App = function () {
     <div className="App">
       <Header />
       <Routes>
-        <Route exact path="/" element={<Main />} />
-        <Route exact path="/my-list" element={<MyList />} />
-        <Route exact path="/new" element={<NewAndPopular />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/my-list" element={<MyList />} />
+        <Route path="/new" element={<NewAndPopular />} />
       </Routes>
     </div>
 
