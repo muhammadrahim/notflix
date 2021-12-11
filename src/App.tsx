@@ -2,8 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import NewAndPopular from './pages/NewAndPopular';
-import MyList from './pages/MyList';
 import Main from './pages/Main';
+import MyList from './pages/MyList';
+import Auth from './Auth';
 import Header from './components/Header';
 
 const App = function () {
@@ -12,8 +13,9 @@ const App = function () {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/my-list" element={<MyList />} />
         <Route path="/new" element={<NewAndPopular />} />
+        <Route path="/my-list" element={<MyList />} />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
     </div>
 

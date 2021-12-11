@@ -15,6 +15,7 @@ plugins:
   - '@typescript-eslint'
 rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "no-shadow": 0,
 
     "no-use-before-declare": 0,
     "import/extensions": 0,
