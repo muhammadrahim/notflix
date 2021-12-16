@@ -1,3 +1,4 @@
+import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import React from 'react';
@@ -17,20 +18,22 @@ const Card = function () {
 
   const cards = createCard();
   return (
-    <Tabs
-      value={value}
-      onChange={handleChange}
-      variant="scrollable"
-      scrollButtons
-      aria-label="visible arrows tabs example"
-      sx={{
-        [`& .${tabsClasses.scrollButtons}`]: {
-          '&.Mui-disabled': { opacity: 0.3 },
-        },
-      }}
-    >
-      {cards}
-    </Tabs>
+    <Box sx={{ flexGrow: 1, bgcolor: 'transparent' }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="scrollable"
+        scrollButtons
+        aria-label="visible arrows tabs example"
+        sx={{
+          [`& .${tabsClasses.scrollButtons}`]: {
+            '&.Mui-disabled': { opacity: 0.3 },
+          },
+        }}
+      >
+        {cards}
+      </Tabs>
+    </Box>
   );
 };
 
